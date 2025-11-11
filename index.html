@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUATRO PARTNERS - Consultoría Estratégica en RRHH</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+ <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // velocidad de animación en ms
+    once: true      // se anima solo una vez
+  });
+</script>
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container-header">
+    <div class="header-content">
+      <div class="logo-container">
+        <a href="#header">
+          <img src="imagenes/logo.png" alt="logo" class="logo">
+        </a>
+      </div>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <nav class="mobile-nav">
+    <a href="#servicios" class="mobile-nav-link">Servicios</a>
+    <a href="#nosotros" class="mobile-nav-link">Nosotros</a>
+    <a href="#cta-section" class="mobile-nav-link">Contáctanos</a>
+  
+  </nav>
+</div>
+
+<!-- Hero Section -->
+<section class="hero"> <img src="images/hero.jpg" alt="Hero" class="hero-img">
+  <div class="overlay">
+    <div class="hero-content centered">
+   <h1 class="hero-title">
+  Transformamos la gestión de personas<br>
+  en motor de crecimiento
+</h1>
+      <p class="hero-description">
+        Acompañamos a Pymes y grandes organizaciones en el crecimiento y transformaciones de su negocio, diseñando la estrategia de gestión de personas y participando activamente en la ejecución.
+      </p>
+      <div class="hero-buttons">
+      <a href="mailto:quatropartners@gmail.com" class="btn btn-primary">Contáctanos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="services-section" id="servicios"> 
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Servicios</h2>
+    </div>
+
+    <div class="services-grid">
+      <!-- tarjeta Empresarios -->
+      <div class="service-card">
+        <h3 class="service-title">Para Empresarios PYMEs</h3>
+        <div class="hero-image">
+          <img src="imagenes/empresarios.jpg" alt="empresarios" class="hero-img">
+        </div>
+        <a href="servicios-empresarios.html" class="btn-vermas">Ver más</a>
+      </div>
+
+      <!-- tarjeta Organizaciones -->
+      <div class="service-card">
+        <h3 class="service-title">Para Grandes Organizaciones</h3>
+        <div class="hero-image">
+          <img src="imagenes/organizaciones.jpg" alt="organizaciones" class="hero-img">
+        </div>
+        <a href="servicios-organizaciones.html" class="btn-vermas">Ver más</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Team Section -->
+<section class="team-section" id="nosotros">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">¿Quiénes somos?</h2>
+      <p class="section-description">
+        Somos una consultora boutique integrada por cuatro profesionales con una
+        distintiva experiencia generalista, que lideramos Gerencias de Recursos Humanos en empresas de diversos rubros.
+      </p>
+    </div>
+
+    <!-- Grid horizontal -->
+    <div class="team-grid">
+      <!-- Miembro 1 -->
+      <div class="team-member" data-aos="fade-up">
+        <div class="member-photo"> 
+          <img src="imagenes/sol.png" alt="sol" class="hero-img">
+        </div>
+        <h3 class="member-name">Sol Rodríguez Sola</h3>
+        <button class="ver-mas" data-target="modal1">Ver más</button>
+      </div>
+
+      <!-- Miembro 2 -->
+      <div class="team-member" data-aos="fade-up">
+        <div class="member-photo">
+          <img src="imagenes/Lucrecia.png" alt="Lucrecia" class="hero-img">
+        </div>
+        <h3 class="member-name">Lucrecia Mazzucchelli</h3>
+        <button class="ver-mas" data-target="modal2">Ver más</button>
+      </div>
+
+      <!-- Miembro 3 -->
+      <div class="team-member" data-aos="fade-up">
+        <div class="member-photo">
+          <img src="imagenes/Casandra.png" alt="Casandra" class="hero-img">
+        </div>
+        <h3 class="member-name">Casandra Giuliano</h3>
+        <button class="ver-mas" data-target="modal3">Ver más</button>
+      </div>
+
+      <!-- Miembro 4 -->
+      <div class="team-member" data-aos="fade-up">
+        <div class="member-photo">
+          <img src="imagenes/Marina.png" alt="Marina" class="hero-img">
+        </div>
+        <h3 class="member-name">Marina Sánchez</h3>
+        <button class="ver-mas" data-target="modal4">Ver más</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS sugerido para mostrar en fila -->
+<style>
+
+
+.section-header {
+  margin-bottom: 2.5rem;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.team-member {
+  width: 250px;
+  text-align: center;
+}
+
+.member-photo img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.member-name {
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ver-mas {
+  margin-top: 1rem;
+}
+
+ section {
+  scroll-margin-top: 80px; /* evita que el header tape el título */
+}
+
+
+</style>
+
+<!-- Modals -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>María Sol Rodríguez Sola</h2>
+    <p>
+  Profesional especializada en liderar las diversas <b>prácticas de recursos humanos</b> a través de una extensa 
+  experiencia en roles de <b>liderazgo de HR</b>. He transitado <b>transformaciones de negocio hacia modelos digitales</b> 
+  y participado del <b>start up y desarrollo</b> de la empresa tecnológica <b>INVIU</b>, con operación en distintos países de la región 
+  diseñando y liderando la ejecución de la <b>estrategia de Cultura, Talento y Organización</b>. Apasionada por la 
+  <b>gestión del desarrollo del talento</b> en las organizaciones.
+</p>
+<p>
+  <b>Founding Partner de Hüma HR Consulting</b>, especialista de <b>búsqueda de Talento</b>.
+</p>
+<p>
+  <b>Licenciada en Psicología (UBA)</b>, <b>Especialista en Gestión Estratégica de RRHH (Udesa)</b> y 
+  <b>Coach Ontológico (Newfield Consulting)</b>.
+</p>
+<p>
+</p>
+<p>
+  <a href="https://www.linkedin.com/in/mar%C3%ADa-sol-rodr%C3%ADguez-sola-878b881b/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+</p>
+
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Lucrecia Mazzucchelli</h2>
+    <p>
+  Profesional especializada en el área de <b>HR corporativo</b>, con más de <b>20 años de experiencia</b> desempeñando roles como
+  <b>Líder, HRBP y Agile Coach</b> en <b>Banco Galicia</b>, acompañando <b>procesos de transformación individuales y organizacionales</b>.
+</p>
+<p>
+  Enfocada en <b>procesos de Coaching Ejecutivo</b>, y hace tres años, <b>Responsable de la gestión de Recursos Humanos</b> en
+  <b>Indusell SRL</b>, Empresa PyME de la <b>industria metalúrgica</b>, en modalidad <b>Fractional HR Externo</b>.
+</p>
+<p>
+  <b>Licenciada en Psicología (UB)</b>, <b>Coach Ontológico (Newfield Consulting)</b>, con <b>Formación en Metodologías Ágiles, Lean Change Management y OKR</b>.
+</p>
+</p>
+<p>
+  <a href="https://www.linkedin.com/in/lucrecia-mazzucchelli-66aaa228/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+</p>
+</div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Casandra Giuliano</h2>
+    <p>
+  Profesional con <b>destacada experiencia en el mundo corporativo de HR</b> como <b>CHRO</b> a cargo de la <b>estrategia de Cultura y
+  de Personas</b> de empresas líderes como <b>Banco Galicia, Galicia Seguros y Banco Supervielle</b>. He transitado
+  <b>transformaciones de negocio</b> liderando la <b>evolución cultural</b>, adecuando las <b>prácticas de gestión de personas</b>, trabajando
+  junto con <b>accionistas y CEOs</b> en el <b>diseño de estructuras organizativas</b>, <b>planes de sucesión de Alta Dirección</b> y el
+  <b>fortalecimiento de equipos directivos</b>.
+</p>
+<p>
+  <b>Licenciada en Relaciones del Trabajo</b> con estudios de <b>postgrado en Management (IAE, IDEA)</b> y 
+  <b>Coach Ontológico (Newfield Consulting)</b>.
+</p>
+</p>
+<p>
+  <a href="https://www.linkedin.com/in/casandra-giuliano-696a1873/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+</p>
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Marina Sánchez</h2>
+    <p>
+  Profesional con <b>más de 30 años en la gestión de personas</b> desarrollada en empresas prestigiosas como <b>Telecom</b> y
+  <b>Banco Galicia</b>, he generado un <b>impacto positivo</b> en diversos ámbitos, desde el <b>diseño de soluciones personalizadas en
+  comunicación</b> y <b>procesos de transformación</b> hasta la <b>gestión de formación, desarrollo, diseño organizacional y
+  compensaciones</b>.
+</p>
+<p>
+  Mi recorrido también incluye <b>roles en áreas comerciales</b>, lo que me brinda una <b>visión integral del negocio</b> y del
+  <b>impacto estratégico de las personas en los resultados</b>.
+</p>
+<p>
+  Cuento con una <b>sólida formación en Administración de Empresas</b>, una <b>Diplomatura en Desarrollo Organizacional (ITBA)</b>, y una <b>Especialización en Gestión de HR</b>.
+</p>
+</p>
+<p>
+  <a href="https://www.linkedin.com/in/marina-sanchez-8564814a/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+</p>
+  </div>
+</div>
+
+<!-- Script -->
+<script>
+  const modals = document.querySelectorAll('.modal');
+  const btns = document.querySelectorAll('.ver-mas');
+  const closes = document.querySelectorAll('.close');
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.getAttribute('data-target');
+      document.getElementById(target).style.display = 'block';
+    });
+  });
+
+  closes.forEach(close => {
+    close.addEventListener('click', () => {
+      close.parentElement.parentElement.style.display = 'none';
+    });
+  });
+
+  window.addEventListener('click', (e) => {
+    modals.forEach(modal => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+<!-- CSS -->
+<style>
+.team-member {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.ver-mas {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.ver-mas:hover {
+  background: #ddd;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  overflow: auto;
+}
+
+.modal-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px;
+  animation: fadeIn 0.3s ease;
+}
+
+.close {
+  float: right;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+
+<section class="enfoque-section">
+  <div class="enfoque-card">
+    <h2 class="enfoque-title">Nuestro enfoque combina:</h2>
+    <div class="enfoque-grid">
+      
+      <div class="enfoque-item">
+        <div class="icon purple">
+          <i class="fas fa-award"></i>
+        </div>
+        <div class="text">
+          <h3 class="title purple">Seniority Estratégico</h3>
+          <p>Experiencia senior en gestión estratégica de recursos humanos con visión integral del negocio</p>
+        </div>
+      </div>
+
+      <div class="enfoque-item">
+        <div class="icon green">
+          <i class="fas fa-bullseye"></i>
+        </div>
+        <div class="text">
+          <h3 class="title green">Visión de Negocio</h3>
+          <p>Enfoque orientado al crecimiento y objetivos del negocio, alineando personas con estrategia</p>
+        </div>
+      </div>
+
+      <div class="enfoque-item">
+        <div class="icon violet">
+          <i class="fas fa-cogs"></i>
+        </div>
+        <div class="text">
+          <h3 class="title violet">Ejecución Operativa</h3>
+          <p>Implementación práctica y efectiva de soluciones con acompañamiento continuo</p>
+        </div>
+      </div>
+
+      <div class="enfoque-item">
+        <div class="icon orange">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="text">
+          <h3 class="title orange">Compromiso con Resultados</h3>
+          <p>Orientación a resultados medibles y sostenibles que impacten positivamente en el negocio</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- CTA Section -->
+<section class="cta-section" id="cta-section">
+  <h1 class="cta-title" style="color: #ede8f0;">
+    ¿Estás listo para impulsar tu negocio?
+  </h1>
+  <div class="cta-buttons">
+    <a href="mailto:quatropartners@gmail.com" class="btn btn-secondary">
+      Contáctanos
+    </a>
+  </div>
+  <!-- Columna 2: Equipo en fila -->
+    <div class="team-row">
+      <div class="contact-member">
+        <p class="name">Sol Rodríguez Sola</p>
+        <p class="phone">📞 11 6232-1856</p>
+        <p><a href="https://www.linkedin.com/in/mar%C3%ADa-sol-rodr%C3%ADguez-sola-878b881b/" target="_blank">LinkedIn</a></p>
+      </div>
+
+      <div class="contact-member">
+        <p class="name">Lucrecia Mazzucchelli</p>
+        <p class="phone">📞 11 3198-2039</p>
+        <p><a href="https://www.linkedin.com/in/lucrecia-mazzucchelli-66aaa228/" target="_blank">LinkedIn</a></p>
+      </div>
+
+      <div class="contact-member">
+        <p class="name">Casandra Giuliano</p>
+        <p class="phone">📞 11 4960-7652</p>
+        <p><a href="https://www.linkedin.com/in/casandra-giuliano-696a1873/" target="_blank">LinkedIn</a></p>
+      </div>
+
+      <div class="contact-member">
+        <p class="name">Marina Sánchez</p>
+        <p class="phone">📞 11 3198-2026</p>
+        <p><a href="https://www.linkedin.com/in/marina-sanchez-8564814a/" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </div>
+<!-- Columna 1: Descripción y email -->
+<div class="footer-container">
+    <div class="footer-info">
+        <strong>Email general:</strong>
+        <a href="mailto:quatropartners@gmail.com" class="linkedin-link">
+          quatropartners@gmail.com
+        </a>
+      </p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-bottom">
+    © 2025 QUATRO PARTNERS. Todos los derechos reservados.
+  </div>
+</footer>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // duración de la animación en ms
+    once: true      // la animación se ejecuta una sola vez
+  });
+</script>
+
+<script>
+  const menuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.style.display = (mobileMenu.style.display === 'block') ? 'none' : 'block';
+  });
+</script>
+</body>
+</html>
+
+<style>
+#servicios .services-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+#servicios .service-card {
+  flex: 0 0 48%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+#servicios .service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 1024px) {
+  #servicios .services-grid {
+    flex-wrap: wrap;
+  }
+
+  #servicios .service-card {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+}
+</style>
